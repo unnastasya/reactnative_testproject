@@ -1,7 +1,11 @@
 import * as React from "react";
 import { Text, View, StyleSheet, Pressable } from "react-native";
 
-export default function HeadingBlock(props) {
+interface HeadingBlockProps {
+	transactionsCount: number;
+}
+
+export default function HeadingBlock({ transactionsCount }: HeadingBlockProps) {
 	return (
 		<View style={styles.container}>
 			<View style={styles.card}></View>
@@ -16,7 +20,7 @@ export default function HeadingBlock(props) {
 
 			<View style={styles.card}>
 				<Text style={styles.cardText}>
-					You have {props.transactionsCount} transactions
+					You have {transactionsCount} transactions
 				</Text>
 			</View>
 		</View>
@@ -39,7 +43,7 @@ const styles = StyleSheet.create({
 		fontWeight: "bold",
 		textAlign: "center",
 	},
-  text: {
+	text: {
 		margin: 24,
 		fontSize: 14,
 		textAlign: "center",
@@ -70,7 +74,7 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		justifyContent: "center",
 	},
-  cardText: {
+	cardText: {
 		fontSize: 14,
 		textAlign: "center",
 	},

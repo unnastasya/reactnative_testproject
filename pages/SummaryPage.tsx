@@ -5,7 +5,11 @@ import HeadingBlock from "../components/HeadingBlock";
 import OneCard from "../components/OneCard";
 import dataJson from "../data.json";
 
-export default function SummaryPage({ navigation }) {
+interface SummaryPageProps {
+    navigation: any
+}
+
+export default function SummaryPage({ navigation }: SummaryPageProps) {
 	const data = dataJson.data;
 	const total = dataJson.total;
 	const incomeData = data.filter((el) => el.type === "income");

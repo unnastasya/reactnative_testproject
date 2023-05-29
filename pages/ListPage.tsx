@@ -1,6 +1,6 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, SafeAreaView, ScrollView, View } from "react-native";
+import { StyleSheet, Text, ScrollView, View } from "react-native";
 
 export default function ListPage() {
 	return (

@@ -1,10 +1,16 @@
 import * as React from "react";
 import { Text, View, StyleSheet, Pressable } from "react-native";
 
-export default function OneCard({navigation, count, title}) {
+interface OneCardProps {
+	navigation: any;
+	count: number;
+	title: string;
+}
+
+export default function OneCard({ navigation, count, title }: OneCardProps) {
 	const linkToListPage = () => {
-        navigation.navigate('ListPage')
-    };
+		navigation.navigate("ListPage");
+	};
 
 	return (
 		<View style={styles.container}>
@@ -18,7 +24,7 @@ export default function OneCard({navigation, count, title}) {
 }
 
 const styles = StyleSheet.create({
-  container: {
+	container: {
 		alignItems: "center",
 		justifyContent: "center",
 		width: "48%",
@@ -28,7 +34,7 @@ const styles = StyleSheet.create({
 		borderColor: "black",
 		borderRadius: 10,
 	},
-  title: {
+	title: {
 		alignSelf: "flex-start",
 		margin: 24,
 		marginBottom: 0,
