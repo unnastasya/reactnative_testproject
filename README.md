@@ -1,1 +1,1 @@
-[Посмотреть демо](https://snack.expo.dev/4LpqpXU9Kv)
+[Посмотреть демо](https://snack.expo.dev/@unnastasya/reactnative_testproject)
